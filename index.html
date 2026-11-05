@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ef">
+    <meta
+      name="description"
+      content="The personal portfolio of Nicholas Ngesa — a software engineer building useful products, thoughtful tools, and open-source projects."
+    >
+    <title>Nicholas Ngesa — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="wordmark" href="#home" aria-label="Nicholas Ngesa home">
+          <span class="wordmark-mark" aria-hidden="true">n.</span>
+          <span>Nicholas Ngesa</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#work">Projects</a>
+          <a href="#skills">Skills</a>
+          <a class="nav-cta" href="https://github.com/sirnickko" target="_blank" rel="noreferrer">
+            GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section container" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> SOFTWARE ENGINEER</p>
+          <h1 id="hero-title">Hi, I’m Nicholas<br><span>Ngesa.</span></h1>
+          <p class="hero-intro">
+            I build software, APIs, and tools that solve real problems. Take a look at
+            the projects I’ve worked on and the technologies I use.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work">View my projects <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="https://github.com/sirnickko" target="_blank" rel="noreferrer">
+              GitHub profile <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="hero-note">
+            <span class="note-line" aria-hidden="true"></span>
+            <p>Python · Rust · JavaScript · TypeScript</p>
+          </div>
+        </div>
+
+        <div class="portrait-frame">
+          <div class="portrait-placeholder">
+            <div class="placeholder-initials" aria-hidden="true">NN</div>
+            <p>Your photo goes here</p>
+            <code>images/nicholas-ngesa.jpg</code>
+          </div>
+          <img
+            class="portrait-photo"
+            src="images/nicholas-ngesa.jpg"
+            alt="Portrait of Nicholas Ngesa"
+            hidden
+          >
+          <span class="portrait-caption">NICHOLAS NGESA · SOFTWARE ENGINEER</span>
+        </div>
+        <a class="scroll-cue" href="#about"><span aria-hidden="true">↓</span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">A LITTLE ABOUT ME</p>
+            <h2 id="about-title">Good software starts<br>with <span>good questions.</span></h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              I like understanding the problem before reaching for a solution. From small
+              developer tools to projects with a bigger purpose, I care about making
+              software that feels clear, useful, and built to last.
+            </p>
+            <p>
+              I’m always exploring new ideas, sharpening my craft, and learning by
+              building. This is where I share a few of those experiments and projects.
+            </p>
+            <a class="text-link" href="https://github.com/sirnickko" target="_blank" rel="noreferrer">
+              A little more about what I build <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section container" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">PROJECT EXPERIENCE</p>
+            <h2 id="work-title">Selected <span>projects.</span></h2>
+          </div>
+          <a class="text-link all-projects" href="https://github.com/sirnickko?tab=repositories" target="_blank" rel="noreferrer">
+            All repositories <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="project-carousel" aria-label="Project carousel">
+          <div class="project-grid" id="project-track" tabindex="0">
+          <article class="project-card project-ifc">
+            <div class="project-topline"><span class="project-index">01 / BUILT ENVIRONMENT</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-icon icon-ifc" aria-hidden="true"><span>IFC</span></div>
+            <h3>IFC Compliance Parser Engine</h3>
+            <p>A Kenya-focused platform that parses BIM/IFC building models and checks them against structural safety and municipal compliance rules.</p>
+            <div class="project-bottom">
+              <span class="project-tag">PYTHON · FASTAPI · REACT</span>
+              <a href="https://github.com/sirnickko/IFC-Compliance-Parser-Engine" target="_blank" rel="noreferrer">View project <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project-card project-featured project-health">
+            <div class="project-topline"><span class="project-index">02 / HEALTH TECHNOLOGY</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-icon icon-health" aria-hidden="true"><span>+</span></div>
+            <h3>Afya Connect</h3>
+            <p>A digital health initiative focused on connecting people with relevant care and health resources.</p>
+            <div class="project-bottom">
+              <span class="project-tag">INDEPENDENT PROJECT</span>
+              <a href="https://github.com/search?q=user%3Asirnickko+Afya+Connect&type=repositories" target="_blank" rel="noreferrer">Search GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project-card project-warm">
+            <div class="project-topline"><span class="project-index">03 / DIGITAL WELLBEING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-icon icon-stress" aria-hidden="true"><span>~</span></div>
+            <h3>Stress Bot</h3>
+            <p>A digital wellbeing project focused on providing accessible support for stress management.</p>
+            <div class="project-bottom">
+              <span class="project-tag">INDEPENDENT PROJECT</span>
+              <a href="https://github.com/search?q=user%3Asirnickko+Stress+Bot&type=repositories" target="_blank" rel="noreferrer">Search GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project-card project-python">
+            <div class="project-topline"><span class="project-index">04 / PYTHON</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-icon icon-python" aria-hidden="true"><span>{ }</span></div>
+            <h3>Input Validation Engine</h3>
+            <p>A reusable, zero-dependency Python library for validating common data types and user inputs.</p>
+            <div class="project-bottom">
+              <span class="project-tag">PYTHON · OPEN SOURCE</span>
+              <a href="https://github.com/sirnickko/python-input-validation-engine" target="_blank" rel="noreferrer">View project <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project-card project-rust">
+            <div class="project-topline"><span class="project-index">05 / RUST</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-icon icon-rust" aria-hidden="true"><span>R</span></div>
+            <h3>Input Validation Engine</h3>
+            <p>A Rust-based input validation library designed for reusable, reliable validation.</p>
+            <div class="project-bottom">
+              <span class="project-tag">RUST</span>
+              <a href="https://github.com/sirnickko/input_validation_engine" target="_blank" rel="noreferrer">View project <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project-card project-lilac">
+            <div class="project-topline"><span class="project-index">06 / BACKEND</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-icon icon-webhook" aria-hidden="true"><span>⌁</span></div>
+            <h3>Webhook Service</h3>
+            <p>A Rust backend service for receiving and processing webhook events.</p>
+            <div class="project-bottom">
+              <span class="project-tag">RUST · BACKEND</span>
+              <a href="https://github.com/sirnickko/webhook-service" target="_blank" rel="noreferrer">View project <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project-card project-blue">
+            <div class="project-topline"><span class="project-index">07 / URL SHORTENING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-icon icon-link" aria-hidden="true"><span>↗</span></div>
+            <h3>Rust URL Shortener</h3>
+            <p>A URL-shortening service implemented in Rust.</p>
+            <div class="project-bottom">
+              <span class="project-tag">RUST</span>
+              <a href="https://github.com/sirnickko/rust_url_shortener" target="_blank" rel="noreferrer">View project <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          </div>
+          <div class="carousel-controls">
+            <div class="carousel-progress">
+              <span class="carousel-status" id="project-status" aria-live="polite">Project 1 of 6 — Afya Connect</span>
+              <div class="carousel-dots" id="project-dots" role="group" aria-label="Choose a project"></div>
+            </div>
+            <div class="carousel-buttons">
+              <button class="carousel-button" type="button" data-direction="previous" aria-label="Previous projects" aria-controls="project-track" disabled>
+                <span aria-hidden="true">←</span> Previous
+              </button>
+              <button class="carousel-button" type="button" data-direction="next" aria-label="Next projects" aria-controls="project-track">
+                Next <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+          <p class="carousel-hint">Use the arrow keys or swipe to browse</p>
+        </div>
+        <div class="more-work">
+          <span class="more-work-mark" aria-hidden="true">+</span>
+          <p>Additional projects and repositories are available on GitHub.</p>
+          <a class="button button-outline" href="https://github.com/sirnickko?tab=repositories" target="_blank" rel="noreferrer">View all repositories <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills" aria-labelledby="skills-title">
+        <div class="container skills-grid">
+          <div>
+            <p class="eyebrow">TOOLS I LIKE TO USE</p>
+            <h2 id="skills-title">A growing<br><span>toolkit.</span></h2>
+            <p class="skills-intro">The tools are always changing. The curiosity stays.</p>
+          </div>
+          <div class="skill-list" aria-label="Technical skills">
+            <span>Python</span>
+            <span>Rust</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>C#</span>
+            <span>Backend development</span>
+            <span>API design</span>
+            <span>Problem solving</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section container" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">HAVE AN IDEA?</p>
+        <h2 id="contact-title">Let’s make something<br><span>useful together.</span></h2>
+        <p>I’m always happy to connect with curious people and talk about good ideas.</p>
+        <a class="button button-light" href="https://github.com/sirnickko" target="_blank" rel="noreferrer">
+          Find me on GitHub <span aria-hidden="true">↗</span>
+        </a>
+        <span class="contact-spark" aria-hidden="true">✳</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="wordmark" href="#home"><span class="wordmark-mark" aria-hidden="true">n.</span><span>Nicholas Ngesa</span></a>
+        <p>Designed with curiosity. Built with care.</p>
+        <a class="footer-top" href="#home">BACK TO TOP ↑</a>
+        <span class="footer-year">© <span id="year">2026</span> NICHOLAS NGESA</span>
+      </div>
+    </footer>
+  </body>
+</html>
