@@ -12,5 +12,6 @@ The site uses plain HTML, CSS, and JavaScript and has no build step or dependenc
 
 - Edit the introduction, project cards, and skills in `index.html`.
 - Replace `images/nicholas-ngesa.jpg` with a square head-and-shoulders portrait; the hero displays it in a circular frame.
+- Project showcase screenshots are stored in `images/`.
 - Update the responsive styling in `styles.css`.
 - The mobile navigation, interactive project deck, and footer year are handled in `script.js`.

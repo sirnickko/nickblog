@@ -429,6 +429,21 @@ h2 > span {
   margin-bottom: 5px;
 }
 
+.featured-project-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.featured-project-actions .text-link {
+  color: #f7f8f3;
+}
+
+.featured-project-actions .text-link:hover {
+  color: var(--green);
+}
+
 .featured-project-description {
   max-width: 720px;
   margin: 20px 0 18px;
@@ -455,13 +470,13 @@ h2 > span {
   font-size: 9px;
 }
 
-.sitebeta-gallery {
+.project-showcase-gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
 
-.sitebeta-shot {
+.project-showcase-shot {
   position: relative;
   display: flex;
   min-width: 0;
@@ -474,13 +489,13 @@ h2 > span {
   background: #0e151d;
 }
 
-.sitebeta-shot-main {
+.project-showcase-shot-main {
   height: auto;
   min-height: 250px;
   grid-column: 1 / -1;
 }
 
-.sitebeta-shot img {
+.project-showcase-shot img {
   display: block;
   width: 100%;
   height: 100%;
@@ -488,15 +503,15 @@ h2 > span {
   transition: transform 220ms ease;
 }
 
-.sitebeta-shot-main img {
+.project-showcase-shot-main img {
   height: auto;
 }
 
-.sitebeta-shot:hover img {
+.project-showcase-shot:hover img {
   transform: scale(1.025);
 }
 
-.sitebeta-shot > span {
+.project-showcase-shot > span {
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -619,6 +634,10 @@ h2 {
 
 .project-ifc {
   border-top: 3px solid #438c82;
+}
+
+.project-mwananchi {
+  border-top: 3px solid #71b784;
 }
 
 .project-health {
@@ -792,6 +811,12 @@ h2 {
   font-weight: 500;
 }
 
+.icon-mwananchi {
+  color: #21865b;
+  font-size: 10px;
+  font-weight: 500;
+}
+
 .icon-health span {
   display: grid;
   width: 21px;
@@ -852,7 +877,21 @@ h2 {
   font-weight: 700;
 }
 
+.project-links {
+  display: flex;
+  gap: 12px;
+}
+
+.project-links a {
+  font-size: 10px;
+  font-weight: 700;
+}
+
 .project-bottom > a:hover {
+  color: #667c4a;
+}
+
+.project-links a:hover {
   color: #667c4a;
 }
 
@@ -1158,19 +1197,19 @@ h2 {
     font-size: 12px;
   }
 
-  .sitebeta-gallery {
+  .project-showcase-gallery {
     grid-template-columns: 1fr;
   }
 
-  .sitebeta-shot,
-  .sitebeta-shot-main {
+  .project-showcase-shot,
+  .project-showcase-shot-main {
     height: auto;
     min-height: 0;
     aspect-ratio: 16 / 10;
   }
 
-  .sitebeta-shot img,
-  .sitebeta-shot-main img {
+  .project-showcase-shot img,
+  .project-showcase-shot-main img {
     width: 100%;
     height: 100%;
     object-fit: contain;
